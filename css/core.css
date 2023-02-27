@@ -1,0 +1,93 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    font: 14px 'Poppins', sans-serif;
+    font-weight: 400;
+    color: #E8E9EA;
+    background-color: #1E252B;
+    line-height: 39px;
+}
+.wrapper {
+    background-color: #1E252B;
+}
+.container {
+    width: 1224px;
+    margin: 0 auto;
+}
+@media (max-width: 1230px) {
+    .container {
+        width: 100%;
+        padding: 0 20px;
+    }
+}
+
+
+.cards{
+    margin-top: 100px;
+    padding: 33px;
+    width: 392px;
+    height: 294px;
+    display: flex;
+    border-radius: 15px;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: .2s;
+}
+.cards:hover{
+    transform: translateY(-20px);
+    transition: 280ms;
+    background: #283036 url('../images/tools/tool_back.svg') no-repeat top right;
+    background-size: cover;
+}
+@media (max-width: 824px) {
+    .cards{
+        width: 290px ;
+    }
+}
+.cards:hover .cardsVisit a{
+    background-color: #FF6E30;
+    color: #e8e9e9;
+
+}
+.cardsIcon img:hover {
+    justify-content: flex-start;
+}
+input{
+    outline: none !important;
+    border: none !important;
+}
+button{
+    outline: none !important;
+    border: none !important;
+}
+@media (max-width: 444px) {
+    .home form button {
+        width: 60px;
+    }
+}
+@media( max-width: 810px){
+    .brands__images img{
+        flex-wrap: wrap;
+        width: 130px;
+        transform: scale(0.7)
+    }
+}
+@media( max-width: 512px){
+    .brands__images img{
+        display: none;
+    }
+}
+@media( max-width: 810px){
+    .brands__inner{
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        height: 450px
+    }
+}
+
+
+
+
